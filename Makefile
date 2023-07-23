@@ -40,7 +40,7 @@ clean:
 	${RM} ${OBJS}
 
 fclean:	clean
-	${RM} ${NAME} ./fdf
+	${RM} -rf ${NAME} ./fdf ./valgring.log ./.vscode
 
 re:	fclean all
 

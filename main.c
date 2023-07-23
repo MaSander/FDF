@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msaner- <msander-@student.42sp.org.br>     +#+  +:+       +#+        */
+/*   By: msander- <msander-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 07:35:53 by msaner-           #+#    #+#             */
-/*   Updated: 2022/10/07 07:36:07 by msaner-          ###   ########.fr       */
+/*   Updated: 2023/07/23 12:21:01 by msander-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,14 +23,14 @@ void	start_window_with_image(t_data *data)
 int	main(int argc, char **argv)
 {
 	t_data	data;
-	t_point	*point;
+	// t_point	*point;
 
 	if (argc == 1)
 		return (0);
 	if (!argv[2] || !ft_strnstr(argv[2], ".fdf", ft_strlen(argv[2])))
 		return (0);
 	read_map(&data, argv[2]);
-	point = data.points;
+	// point = data.points;
 	data.window_name = argv[1];
 	data.width = 800;
 	data.height = 800;
